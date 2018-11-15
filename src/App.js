@@ -53,7 +53,6 @@ class App extends Component {
 
   render() {
     let {hints, currentHint} = this.state
-    console.log(hints)
     return (  
       <div className="container">
         <div className="clock">
