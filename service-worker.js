@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/react-binary-clock/precache-manifest.0e24266ed16798e870437aa2b8eb82fd.js"
+  "/react-binary-clock/precache-manifest.8f0d1dcd50a89d05d58811f976530c83.js"
 );
 
 workbox.clientsClaim();
