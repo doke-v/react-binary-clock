@@ -5,6 +5,10 @@
 # Live version
 [tuhnik.github.io/react-binary-clock](https://tuhnik.github.io/react-binary-clock)
 
+# Usage
+``Right click`` - show next hint.  
+``Any key`` - switch to next theme.
+
 # Screenshots
 ![Screenshot](img/screenshot1.png)
 

@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import './App.css';
 
 class App extends Component {
-  state = { bintime: [], time: [], currentHint: 0, hints:[], blockNumbers: false}
+  state = { bintime: [], time: [], currentHint: 0, hints:[], blockNumbers: false, theme: 0, themes: ["", "indian", "marine", "france", "typewriter", "crazy"]}
 
   componentDidMount = () => {
     this.tick()
     setInterval(this.tick, 1000)
     window.addEventListener('click', this.nextHint);
+    window.addEventListener('keypress', this.nextTheme);
   }
   tick=() => {
     let d = new Date().toTimeString().split(" ")[0].replace(/:/g, "").split("");
@@ -28,7 +29,7 @@ class App extends Component {
       let children = []
       el.map((item, j) => {
         bin = bin/2
-        return children.push(<div key={j} className={item > 0 ? "item lit" : "item"}>{this.state.blockNumbers && <p>{bin}</p> }</div>)
+        return children.push(<div key={j} className={item > 0 ? "item lit" : "item"}>{this.state.blockNumbers && item > 0 && <p>{bin}</p> }</div>)
       })   
       return blocks.push(<div key={i} className="col">{children}</div>)
     })
@@ -51,19 +52,26 @@ class App extends Component {
     currentHint===3? blockNumbers= true:blockNumbers = false
     this.setState({currentHint, blockNumbers})
   }
+  nextTheme = () => {
+    let {theme, themes} = this.state
+    theme < themes.length - 1?theme+=1: theme=0
+    this.setState({theme}) 
 
+  }
   render() {
-    let {hints, currentHint} = this.state
-    return (  
+    let {hints, currentHint, themes, theme} = this.state
+    return (
+      <div className={"themed " + themes[theme]}>
       <div className="container">
         <div className="clock">
           {this.blocks()}
         </div >
         <div className="help-row">   
           {hints.length && hints[currentHint].map((el, i) => {
-            return <div key={i} className="item">{el}</div>})
+            return <div key={i} className="item"><p>{el}</p></div>})
           }
         </div>
+      </div>
       </div>
     );
   }

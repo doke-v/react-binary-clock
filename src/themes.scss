@@ -1,0 +1,78 @@
+.indian {
+    background: indianred;
+    .item {
+        background: #c66f6f;
+    }
+    .lit {
+        background: #5d4452;
+    }
+    .item p {
+        color: #e7c99d;
+    }   
+}
+
+.marine {
+    background: #028090;
+    .item {
+        background: #00a896;
+    }
+    .lit {
+        background: #f0f3bd;
+    }
+    .item p {
+        color: #d5d7b5;
+    }   
+}
+
+.france {
+    background: #FDFFFC;
+    .item {
+        background: #011627;
+    }
+    .lit {
+        background: #FF9F1C;
+    }
+    .item p {
+        color: #011627;
+    }  
+
+}
+
+.typewriter{
+    background: #E4E0C7;
+    .item {
+        background: #573B3a;
+        border-radius: 50%;
+    }
+    .lit {
+        background: #DDC470;
+    }
+    .item p {
+        color: #CC6E55;
+    }   
+}
+
+.crazy{
+    background: #FFC107;
+    .clock {
+        transform: rotate(2deg);
+    }
+    .help-row {
+        transform: rotate(-2deg);
+    }
+    .item {
+        background: #FFC107;
+        
+        &:nth-of-type(odd) {
+            transform: rotate(random(5)+deg);
+        }
+
+    }
+    .lit {
+        background: #274257;
+        box-shadow: 5px 5px 5px #ff9c11;
+    }
+    .item p {
+        color: #ff5722;
+    }   
+}
