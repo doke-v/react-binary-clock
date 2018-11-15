@@ -16,8 +16,9 @@ class App extends Component {
       var num = dec2bin(el, 4).split("")
       arr.push(num)
     })
+    
+    this.setState({ time: d, bintime: arr})
     this.generateHints()
-    this.setState({ bintime: arr, time: d })
   }
 
   blocks = () => {
