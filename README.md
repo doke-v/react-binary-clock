@@ -2,6 +2,6 @@
 
 24-hour format binary clock inspired by [wikipedia.org/wiki/Binary_clock](https://en.wikipedia.org/wiki/Binary_clock).
 
-![Screenshot](https://github.com/tuhnik/js-binary-clock/blob/master/screenshot1.PNG)
+![Screenshot](img/screenshot1.png)
 
-![Screenshot](https://github.com/tuhnik/js-binary-clock/blob/master/screenshot2.PNG)
+![Screenshot](img/screenshot2.png)
