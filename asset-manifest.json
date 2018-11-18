@@ -1,15 +1,15 @@
 {
-  "main.css": "/react-binary-clock/static/css/main.ec3f2996.chunk.css",
-  "main.js": "/react-binary-clock/static/js/main.9365b63d.chunk.js",
-  "main.js.map": "/react-binary-clock/static/js/main.9365b63d.chunk.js.map",
+  "main.css": "/react-binary-clock/static/css/main.537f5d14.chunk.css",
+  "main.js": "/react-binary-clock/static/js/main.129cbc94.chunk.js",
+  "main.js.map": "/react-binary-clock/static/js/main.129cbc94.chunk.js.map",
   "static/js/1.a9d6ba52.chunk.js": "/react-binary-clock/static/js/1.a9d6ba52.chunk.js",
   "static/js/1.a9d6ba52.chunk.js.map": "/react-binary-clock/static/js/1.a9d6ba52.chunk.js.map",
   "runtime~main.js": "/react-binary-clock/static/js/runtime~main.6a787cae.js",
   "runtime~main.js.map": "/react-binary-clock/static/js/runtime~main.6a787cae.js.map",
-  "static/css/main.ec3f2996.chunk.css.map": "/react-binary-clock/static/css/main.ec3f2996.chunk.css.map",
+  "static/css/main.537f5d14.chunk.css.map": "/react-binary-clock/static/css/main.537f5d14.chunk.css.map",
   "static/media/paint-brush.svg": "/react-binary-clock/static/media/paint-brush.847a2f67.svg",
   "static/media/clock-o.svg": "/react-binary-clock/static/media/clock-o.aec9e8c6.svg",
   "index.html": "/react-binary-clock/index.html",
-  "precache-manifest.61109d626401431b9dd7885aa3ff6c88.js": "/react-binary-clock/precache-manifest.61109d626401431b9dd7885aa3ff6c88.js",
+  "precache-manifest.0d09711c92d57fdd81e065780c5342d3.js": "/react-binary-clock/precache-manifest.0d09711c92d57fdd81e065780c5342d3.js",
   "service-worker.js": "/react-binary-clock/service-worker.js"
 }
