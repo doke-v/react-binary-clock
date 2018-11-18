@@ -6,8 +6,8 @@
 [tuhnik.github.io/react-binary-clock](https://tuhnik.github.io/react-binary-clock)
 
 # Usage
-``Left click`` - show next hint.  
-``Any key`` - switch to next theme.
+``Clock icon`` - show next hint.  
+``Brush icon`` - switch to next theme.
 
 # Screenshots
 ![Screenshot](img/screenshot1.png)
