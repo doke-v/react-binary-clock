@@ -82,6 +82,7 @@ body {
 
 .controls {
   position: absolute;
+  user-select: none;
   display: flex;
   width: 100vw;
   flex-direction: column;
