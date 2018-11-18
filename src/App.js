@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import './App.css';
+import Brush from './svg/paint-brush.svg'
+import Clock from './svg/clock-o.svg'
 
 class App extends Component {
   state = { bintime: [], time: [], currentHint: 0, hints:[], blockNumbers: false, theme: 0, themes: ["", "indian", "marine", "france", "typewriter", "crazy"]}
@@ -7,8 +8,6 @@ class App extends Component {
   componentDidMount = () => {
     this.tick()
     setInterval(this.tick, 1000)
-    window.addEventListener('click', this.nextHint);
-    window.addEventListener('keypress', this.nextTheme);
   }
   tick=() => {
     let d = new Date().toTimeString().split(" ")[0].replace(/:/g, "").split("");
@@ -38,11 +37,10 @@ class App extends Component {
 
   generateHints = () => {
     let hints = []
-    hints[0] = "CLICK!".split("")
+    hints[0] = [""]
     hints[1] = "HHMMSS".split("")
     hints[2] = this.state.time
     hints[3] = this.state.time
-    hints[4] = [""]
     this.setState({hints})
   }
 
@@ -62,6 +60,10 @@ class App extends Component {
     let {hints, currentHint, themes, theme} = this.state
     return (
       <div className={"themed " + themes[theme]}>
+      <div className="controls">
+        <img alt="Theme" src={Brush} onClick={this.nextTheme}/>
+        <img alt="Hint" src={Clock} onClick={this.nextHint}/>
+      </div>    
       <div className="container">
         <div className="clock">
           {this.blocks()}
