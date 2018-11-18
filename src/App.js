@@ -3,7 +3,7 @@ import Brush from './svg/paint-brush.svg'
 import Clock from './svg/clock-o.svg'
 
 class App extends Component {
-  state = { bintime: [], time: [], currentHint: 0, hints:[], blockNumbers: false, theme: 0, themes: ["", "indian", "marine", "france", "typewriter", "crazy"]}
+  state = { bintime: [], time: [], currentHint: 0, hints:[], blockNumbers: false, theme: 0, themes: ["", "indian", "marine", "france", "typewriter", "crazy", "neo"]}
 
   componentDidMount = () => {
     this.tick()
@@ -41,13 +41,14 @@ class App extends Component {
     hints[1] = "HHMMSS".split("")
     hints[2] = this.state.time
     hints[3] = this.state.time
+    hints[4] = [""]
     this.setState({hints})
   }
 
   nextHint = () => {
     let {hints, blockNumbers, currentHint} = this.state   
     currentHint < hints.length - 1?currentHint+=1:currentHint = 0
-    currentHint===3? blockNumbers= true:blockNumbers = false
+    currentHint===3 || currentHint===4? blockNumbers= true:blockNumbers = false
     this.setState({currentHint, blockNumbers})
   }
   nextTheme = () => {

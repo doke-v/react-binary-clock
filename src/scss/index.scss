@@ -10,7 +10,9 @@ body {
   margin: 0;
   padding: 0;
   background: #d8dcd2;
-  
+}
+* {
+  box-sizing: border-box;
 }
 
 #root {
@@ -38,12 +40,12 @@ body {
 .item {
   width: 1em;
   height: 1em;
-  
   border-radius: 10px;
   margin: 10px 5px;
   background-color: #c6cac0;
   user-select: none;
   display: flex;
+  justify-content: center;
 }
 
 .item p {
@@ -56,10 +58,11 @@ body {
 
 .lit {
   background-color: #292d23;
-  transition : 500ms ease-in;
+  transition: background-color 100ms ease-in;
 }
 
 .help-row .item {
+  border: 0;
   background-color: unset;
   margin-top: 0
 }
@@ -96,4 +99,7 @@ body {
     &:hover {
       opacity: 8;
     }
+  @include mobile {
+      display: unset;
+  }  
 }

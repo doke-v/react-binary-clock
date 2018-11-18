@@ -53,6 +53,22 @@
     }   
 }
 
+.neo {
+    background: #020f55;
+    .item {
+        background: unset;
+        border: 4px dotted #13206b;
+    }
+    .lit {
+        border: 4px dotted #ffc107;
+        background: unset;
+    }
+    .item p {
+        color: #ffc107;
+    }   
+
+}
+
 .crazy{
     background: #FFC107;
     .clock {
