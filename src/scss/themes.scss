@@ -85,6 +85,26 @@
     }
     .help-row p {
         color: black !important;
+    } 
+}
+
+.minimal{
+    background: #fff;
+
+    .item {
+        background: #000;
+        border-radius: 0px;
     }
-   
+
+    .lit {
+        background: #fff;
+        border: 2px solid black;
+        //box-shadow: 3px 3px 1px #00000021;
+    }
+    .item p {
+        color: black;
+    }
+    .help-row p {
+        color: black;
+    } 
 }
