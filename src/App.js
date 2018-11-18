@@ -3,7 +3,7 @@ import Brush from './svg/paint-brush.svg'
 import Clock from './svg/clock-o.svg'
 
 class App extends Component {
-  state = { bintime: [], time: [], currentHint: 0, hints:[], blockNumbers: false, theme: 0, themes: ["", "indian", "marine", "france", "typewriter", "crazy", "neo"]}
+  state = { bintime: [], time: [], currentHint: 0, hints:[], blockNumbers: false, theme: 0, themes: ["", "indian", "marine", "france", "typewriter", "crazy", "pacman"]}
 
   componentDidMount = () => {
     this.tick()

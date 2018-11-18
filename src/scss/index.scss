@@ -11,6 +11,7 @@ body {
   padding: 0;
   background: #d8dcd2;
 }
+
 * {
   box-sizing: border-box;
 }
@@ -42,18 +43,20 @@ body {
   height: 1em;
   border-radius: 10px;
   margin: 10px 5px;
+  flex: 1;
   background-color: #c6cac0;
   user-select: none;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: center
 }
 
 .item p {
+  line-height: 1em;
   margin: auto;
   background-color: unset;
   color: #c6cac0;
   font-family: monospace;
-  line-height: 1em;
   text-align: center;
 }
 
@@ -101,6 +104,8 @@ body {
       opacity: 8;
     }
   @include mobile {
-      display: unset;
+    &:hover {
+      opacity: 0.3;
+    }
   }  
 }

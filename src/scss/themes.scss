@@ -53,7 +53,7 @@
     }   
 }
 
-.neo {
+.pacman {
     background: #020f55;
     .item {
         background: unset;
@@ -70,27 +70,21 @@
 }
 
 .crazy{
-    background: #FFC107;
-    .clock {
-        transform: rotate(2deg);
-    }
-    .help-row {
-        transform: rotate(-2deg);
-    }
+    background: #fff;
+
     .item {
         background: #FFC107;
-        
-        &:nth-of-type(odd) {
-            transform: rotate(random(5)+deg);
-        }
-
+        border-radius: 3px;
     }
+
     .lit {
-        background: #274257;
-        box-shadow: 5px 5px 5px #ff9c11;
+        background: #000;
     }
     .item p {
-        color: #ff5722;
-        text-shadow: 2px 2px 3px #274257;
-    }   
+        color: #FFC107;
+    }
+    .help-row p {
+        color: black !important;
+    }
+   
 }
