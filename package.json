@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
     "gh-pages": "^2.0.1",
     "node-sass": "^4.10.0",
     "react": "^16.6.3",
