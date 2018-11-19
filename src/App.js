@@ -3,7 +3,16 @@ import Brush from './svg/paint-brush.svg'
 import Clock from './svg/clock-o.svg'
 
 class App extends Component {
-  state = { bintime: [], time: [], currentHint: 0, hints:[], blockNumbers: false, theme: 0, themes: ["", "indian", "marine", "france", "typewriter", "crazy", "pacman", "minimal"]}
+  
+  constructor(){
+    let currentHint = JSON.parse(localStorage.getItem('currentHint')) || 0;
+    let currentTheme = JSON.parse(localStorage.getItem('currentTheme')) || 0;
+    let blockNumbers = JSON.parse(localStorage.getItem('blockNumbers')) || false;
+    super()
+    
+    this.state = { bintime: [], time: [], currentHint, hints:[], blockNumbers, currentTheme, themes: ["", "indian", "marine", "france", "typewriter", "crazy", "pacman", "minimal"]}
+    
+  }
 
   componentDidMount = () => {
     this.tick()
@@ -16,7 +25,6 @@ class App extends Component {
       var num = dec2bin(el, 4).split("")
       arr.push(num)
     })
-    
     this.setState({ time: d, bintime: arr})
     this.generateHints()
   }
@@ -49,18 +57,21 @@ class App extends Component {
     let {hints, blockNumbers, currentHint} = this.state   
     currentHint < hints.length - 1?currentHint+=1:currentHint = 0
     currentHint===3 || currentHint===4? blockNumbers= true:blockNumbers = false
+    localStorage.setItem("currentHint", currentHint)
+    localStorage.setItem("blockNumbers", blockNumbers)
     this.setState({currentHint, blockNumbers})
   }
   nextTheme = () => {
-    let {theme, themes} = this.state
-    theme < themes.length - 1?theme+=1: theme=0
-    this.setState({theme}) 
+    let {currentTheme, themes} = this.state
+    currentTheme < themes.length - 1?currentTheme+=1: currentTheme=0
+    localStorage.setItem("currentTheme", currentTheme)
+    this.setState({currentTheme}) 
 
   }
   render() {
-    let {hints, currentHint, themes, theme} = this.state
+    let {hints, currentHint, themes, currentTheme} = this.state
     return (
-      <div className={"themed " + themes[theme]}>
+      <div className={"themed " + themes[currentTheme]}>
       <div className="controls">
         <img alt="Theme" src={Brush} onClick={this.nextTheme}/>
         <img alt="Hint" src={Clock} onClick={this.nextHint}/>
