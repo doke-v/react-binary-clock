@@ -1,7 +1,7 @@
 {
   "main.css": "/react-binary-clock/static/css/main.537f5d14.chunk.css",
-  "main.js": "/react-binary-clock/static/js/main.129cbc94.chunk.js",
-  "main.js.map": "/react-binary-clock/static/js/main.129cbc94.chunk.js.map",
+  "main.js": "/react-binary-clock/static/js/main.0aa599fb.chunk.js",
+  "main.js.map": "/react-binary-clock/static/js/main.0aa599fb.chunk.js.map",
   "static/js/1.a9d6ba52.chunk.js": "/react-binary-clock/static/js/1.a9d6ba52.chunk.js",
   "static/js/1.a9d6ba52.chunk.js.map": "/react-binary-clock/static/js/1.a9d6ba52.chunk.js.map",
   "runtime~main.js": "/react-binary-clock/static/js/runtime~main.6a787cae.js",
@@ -10,6 +10,6 @@
   "static/media/paint-brush.svg": "/react-binary-clock/static/media/paint-brush.847a2f67.svg",
   "static/media/clock-o.svg": "/react-binary-clock/static/media/clock-o.aec9e8c6.svg",
   "index.html": "/react-binary-clock/index.html",
-  "precache-manifest.0d09711c92d57fdd81e065780c5342d3.js": "/react-binary-clock/precache-manifest.0d09711c92d57fdd81e065780c5342d3.js",
+  "precache-manifest.8bb8a88f66ecc10f70e2b0ab63b93229.js": "/react-binary-clock/precache-manifest.8bb8a88f66ecc10f70e2b0ab63b93229.js",
   "service-worker.js": "/react-binary-clock/service-worker.js"
 }

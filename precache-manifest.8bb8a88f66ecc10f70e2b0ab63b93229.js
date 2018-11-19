@@ -12,19 +12,19 @@ self.__precacheManifest = [
     "url": "/react-binary-clock/static/js/runtime~main.6a787cae.js"
   },
   {
-    "revision": "129cbc94c6ba1f6b171d",
-    "url": "/react-binary-clock/static/js/main.129cbc94.chunk.js"
+    "revision": "0aa599fb9ecf54413fb8",
+    "url": "/react-binary-clock/static/js/main.0aa599fb.chunk.js"
   },
   {
     "revision": "a9d6ba5203de63d53915",
     "url": "/react-binary-clock/static/js/1.a9d6ba52.chunk.js"
   },
   {
-    "revision": "129cbc94c6ba1f6b171d",
+    "revision": "0aa599fb9ecf54413fb8",
     "url": "/react-binary-clock/static/css/main.537f5d14.chunk.css"
   },
   {
-    "revision": "135fb254f61e6e5e8b8e5c0d1cd1918e",
+    "revision": "05115d9e4c88ddebcaaa5664b550131c",
     "url": "/react-binary-clock/index.html"
   }
 ];
