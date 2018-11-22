@@ -9,9 +9,7 @@ class App extends Component {
     let currentTheme = JSON.parse(localStorage.getItem('currentTheme')) || 0;
     let blockNumbers = JSON.parse(localStorage.getItem('blockNumbers')) || false;
     super()
-    
-    this.state = { bintime: [], time: [], currentHint, hints:[], blockNumbers, currentTheme, themes: ["", "indian", "marine", "france", "typewriter", "crazy", "pacman", "minimal"]}
-    
+    this.state = { bintime: [], time: [], currentHint, hints:[], blockNumbers, currentTheme, themes: ["", "indian", "marine", "france", "typewriter", "crazy", "pacman", "minimal"]} 
   }
 
   componentDidMount = () => {
