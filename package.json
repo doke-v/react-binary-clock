@@ -19,7 +19,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "homepage": "https://tuhnik.github.io/react-binary-clock",
+  "homepage": ".",
   "browserslist": [
     ">0.2%",
     "not dead",
